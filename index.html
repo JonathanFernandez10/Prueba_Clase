@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera Web</title>
+    <title>Inicio de Sesión - ¡Bienvenido!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jonathan Fernandez</h1>
-    <p>Esta es mi primera pagina web.</p>
+    <div class="container-decorativo">
+        <!-- Elementos decorativos animados -->
+        <div class="globo globo1"></div>
+        <div class="globo globo2"></div>
+        <div class="globo globo3"></div>
+        <div class="globo globo4"></div>
+        <div class="estrella estrella1">⭐</div>
+        <div class="estrella estrella2">✨</div>
+        <div class="estrella estrella3">🎉</div>
+    </div>
+
+    <div class="container-formulario">
+        <div class="formulario-login">
+            <div class="encabezado">
+                <h1>¡Hola! 👋</h1>
+                <p>Inicia sesión para continuar</p>
+            </div>
+
+            <form id="formLogin" onsubmit="manejarLogin(event)">
+                <div class="grupo-input">
+                    <label for="usuario">Usuario o Email</label>
+                    <input type="text" id="usuario" name="usuario" required placeholder="tu@email.com">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required placeholder="••••••••">
+                </div>
+
+                <button type="submit" class="boton-login">Ingresar 🚀</button>
+            </form>
+
+            <div class="pie-formulario">
+                <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                <p><a href="#">Olvidé mi contraseña</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mensaje" class="mensaje"></div>
+
+    <script src="scrip.js"></script>
 </body>
 </html>
